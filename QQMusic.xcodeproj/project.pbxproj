@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F11EA5F1AD904DA004A24EF /* SongListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F11EA5E1AD904DA004A24EF /* SongListController.swift */; };
+		5F11EA611AD9076C004A24EF /* SongRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F11EA601AD9076C004A24EF /* SongRowController.swift */; };
+		5F60CBAC1AD25EE7009C8228 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60CBAB1AD25EE7009C8228 /* DataProvider.swift */; };
+		5F60CBAE1AD281EC009C8228 /* SongLrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60CBAD1AD281EC009C8228 /* SongLrc.swift */; };
+		5F864CA61ACFAEAB00FEA39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F864CA51ACFAEAB00FEA39D /* AppDelegate.swift */; };
+		5F864CA81ACFAEAB00FEA39D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F864CA71ACFAEAB00FEA39D /* ViewController.swift */; };
+		5F864CAB1ACFAEAB00FEA39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CA91ACFAEAB00FEA39D /* Main.storyboard */; };
+		5F864CAD1ACFAEAB00FEA39D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CAC1ACFAEAB00FEA39D /* Images.xcassets */; };
+		5F864CB01ACFAEAB00FEA39D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CAE1ACFAEAB00FEA39D /* LaunchScreen.xib */; };
+		5F864CBC1ACFAEAB00FEA39D /* QQMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F864CBB1ACFAEAB00FEA39D /* QQMusicTests.swift */; };
+		5F864CED1ACFB70D00FEA39D /* 239780136.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CC61ACFB70D00FEA39D /* 239780136.jpg */; };
+		5F864CEE1ACFB70D00FEA39D /* actionbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CC71ACFB70D00FEA39D /* actionbutton@2x.png */; };
+		5F864CEF1ACFB70D00FEA39D /* actionIconLike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CC81ACFB70D00FEA39D /* actionIconLike@2x.png */; };
+		5F864CF01ACFB70D00FEA39D /* actionIconLikeSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CC91ACFB70D00FEA39D /* actionIconLikeSelected@2x.png */; };
+		5F864CF11ACFB70D00FEA39D /* bannerTips_topokSQ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CCA1ACFB70D00FEA39D /* bannerTips_topokSQ@2x.png */; };
+		5F864CF21ACFB70D00FEA39D /* channel_song_list_play_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CCB1ACFB70D00FEA39D /* channel_song_list_play_btn@2x.png */; };
+		5F864CF31ACFB70D00FEA39D /* channel_song_list_play_btn_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CCC1ACFB70D00FEA39D /* channel_song_list_play_btn_h@2x.png */; };
+		5F864CF41ACFB70D00FEA39D /* channel_songFolderList_playAll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CCD1ACFB70D00FEA39D /* channel_songFolderList_playAll@2x.png */; };
+		5F864CF51ACFB70D00FEA39D /* channel_songFolderList_playAll_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CCE1ACFB70D00FEA39D /* channel_songFolderList_playAll_h@2x.png */; };
+		5F864CF61ACFB70D00FEA39D /* icon_operate_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CCF1ACFB70D00FEA39D /* icon_operate_play@2x.png */; };
+		5F864CF71ACFB70D00FEA39D /* icon_operate_play_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD01ACFB70D00FEA39D /* icon_operate_play_pressed@2x.png */; };
+		5F864CF81ACFB70D00FEA39D /* mymuisc_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD11ACFB70D00FEA39D /* mymuisc_more@2x.png */; };
+		5F864CF91ACFB70D00FEA39D /* nowplay_recommend_selected_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD21ACFB70D00FEA39D /* nowplay_recommend_selected_cell@2x.png */; };
+		5F864CFA1ACFB70D00FEA39D /* nowplaying_playlist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD31ACFB70D00FEA39D /* nowplaying_playlist@2x.png */; };
+		5F864CFB1ACFB70D00FEA39D /* nowplaying_random@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD41ACFB70D00FEA39D /* nowplaying_random@2x.png */; };
+		5F864CFC1ACFB70D00FEA39D /* nowplaying_random_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD51ACFB70D00FEA39D /* nowplaying_random_h@2x.png */; };
+		5F864CFD1ACFB70D00FEA39D /* nowplaying_section_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD61ACFB70D00FEA39D /* nowplaying_section_bg@2x.png */; };
+		5F864CFE1ACFB70D00FEA39D /* player_btn_download_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD71ACFB70D00FEA39D /* player_btn_download_disable@2x.png */; };
+		5F864CFF1ACFB70D00FEA39D /* player_btn_download_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD81ACFB70D00FEA39D /* player_btn_download_highlight@2x.png */; };
+		5F864D001ACFB70D00FEA39D /* player_btn_download_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CD91ACFB70D00FEA39D /* player_btn_download_normal@2x.png */; };
+		5F864D011ACFB70D00FEA39D /* player_btn_favorite_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CDA1ACFB70D00FEA39D /* player_btn_favorite_disable@2x.png */; };
+		5F864D021ACFB70D00FEA39D /* player_btn_favorite_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CDB1ACFB70D00FEA39D /* player_btn_favorite_highlight@2x.png */; };
+		5F864D031ACFB70D00FEA39D /* player_btn_favorite_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CDC1ACFB70D00FEA39D /* player_btn_favorite_normal@2x.png */; };
+		5F864D041ACFB70D00FEA39D /* player_btn_favorited_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CDD1ACFB70D00FEA39D /* player_btn_favorited_highlight@2x.png */; };
+		5F864D051ACFB70D00FEA39D /* player_btn_favorited_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CDE1ACFB70D00FEA39D /* player_btn_favorited_normal@2x.png */; };
+		5F864D061ACFB70D00FEA39D /* player_btn_hq_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CDF1ACFB70D00FEA39D /* player_btn_hq_disable@2x.png */; };
+		5F864D071ACFB70D00FEA39D /* player_btn_more_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE01ACFB70D00FEA39D /* player_btn_more_highlight@2x.png */; };
+		5F864D081ACFB70D00FEA39D /* player_btn_more_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE11ACFB70D00FEA39D /* player_btn_more_normal@2x.png */; };
+		5F864D091ACFB70D00FEA39D /* player_btn_next_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE21ACFB70D00FEA39D /* player_btn_next_highlight@2x.png */; };
+		5F864D0A1ACFB70D00FEA39D /* player_btn_next_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE31ACFB70D00FEA39D /* player_btn_next_normal@2x.png */; };
+		5F864D0B1ACFB70D00FEA39D /* player_btn_pause_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE41ACFB70D00FEA39D /* player_btn_pause_highlight@2x.png */; };
+		5F864D0C1ACFB70D00FEA39D /* player_btn_pause_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE51ACFB70D00FEA39D /* player_btn_pause_normal@2x.png */; };
+		5F864D0D1ACFB70D00FEA39D /* player_btn_play_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE61ACFB70D00FEA39D /* player_btn_play_highlight@2x.png */; };
+		5F864D0E1ACFB70D00FEA39D /* player_btn_play_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE71ACFB70D00FEA39D /* player_btn_play_normal@2x.png */; };
+		5F864D0F1ACFB70D00FEA39D /* player_btn_playlist_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE81ACFB70D00FEA39D /* player_btn_playlist_highlight@2x.png */; };
+		5F864D101ACFB70D00FEA39D /* player_btn_playlist_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CE91ACFB70D00FEA39D /* player_btn_playlist_normal@2x.png */; };
+		5F864D111ACFB70D00FEA39D /* player_btn_pre_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CEA1ACFB70D00FEA39D /* player_btn_pre_highlight@2x.png */; };
+		5F864D121ACFB70D00FEA39D /* player_btn_pre_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CEB1ACFB70D00FEA39D /* player_btn_pre_normal@2x.png */; };
+		5F864D131ACFB70D00FEA39D /* player_btn_sq_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864CEC1ACFB70D00FEA39D /* player_btn_sq_disable@2x.png */; };
+		5F864D251ACFD02900FEA39D /* player_btn_radio_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D141ACFD02900FEA39D /* player_btn_radio_normal@2x.png */; };
+		5F864D261ACFD02900FEA39D /* player_btn_radiolist_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D151ACFD02900FEA39D /* player_btn_radiolist_highlight@2x.png */; };
+		5F864D271ACFD02900FEA39D /* player_btn_radiolist_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D161ACFD02900FEA39D /* player_btn_radiolist_normal@2x.png */; };
+		5F864D281ACFD02900FEA39D /* player_btn_random_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D171ACFD02900FEA39D /* player_btn_random_disable@2x.png */; };
+		5F864D291ACFD02900FEA39D /* player_btn_random_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D181ACFD02900FEA39D /* player_btn_random_highlight@2x.png */; };
+		5F864D2A1ACFD02900FEA39D /* player_btn_random_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D191ACFD02900FEA39D /* player_btn_random_normal@2x.png */; };
+		5F864D2B1ACFD02900FEA39D /* player_btn_repeat_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D1A1ACFD02900FEA39D /* player_btn_repeat_disable@2x.png */; };
+		5F864D2C1ACFD02900FEA39D /* player_btn_repeat_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D1B1ACFD02900FEA39D /* player_btn_repeat_highlight@2x.png */; };
+		5F864D2D1ACFD02900FEA39D /* player_btn_repeat_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D1C1ACFD02900FEA39D /* player_btn_repeat_normal@2x.png */; };
+		5F864D2E1ACFD02900FEA39D /* player_btn_repeatone_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D1D1ACFD02900FEA39D /* player_btn_repeatone_disable@2x.png */; };
+		5F864D2F1ACFD02900FEA39D /* player_btn_repeatone_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D1E1ACFD02900FEA39D /* player_btn_repeatone_highlight@2x.png */; };
+		5F864D301ACFD02900FEA39D /* player_btn_repeatone_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D1F1ACFD02900FEA39D /* player_btn_repeatone_normal@2x.png */; };
+		5F864D311ACFD02900FEA39D /* player_btn_share_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D201ACFD02900FEA39D /* player_btn_share_disable@2x.png */; };
+		5F864D321ACFD02900FEA39D /* player_btn_share_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D211ACFD02900FEA39D /* player_btn_share_highlight@2x.png */; };
+		5F864D331ACFD02900FEA39D /* player_btn_share_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D221ACFD02900FEA39D /* player_btn_share_normal@2x.png */; };
+		5F864D341ACFD02900FEA39D /* player_btn_trash_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D231ACFD02900FEA39D /* player_btn_trash_highlight@2x.png */; };
+		5F864D351ACFD02900FEA39D /* player_btn_trash_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D241ACFD02900FEA39D /* player_btn_trash_normal@2x.png */; };
+		5F864D391ACFD33C00FEA39D /* player_slider_playback_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D361ACFD33C00FEA39D /* player_slider_playback_left@2x.png */; };
+		5F864D3A1ACFD33C00FEA39D /* player_slider_playback_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D371ACFD33C00FEA39D /* player_slider_playback_right@2x.png */; };
+		5F864D3B1ACFD33C00FEA39D /* player_slider_playback_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F864D381ACFD33C00FEA39D /* player_slider_playback_thumb@2x.png */; };
+		5F864D3D1ACFE38200FEA39D /* PlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F864D3C1ACFE38200FEA39D /* PlayListView.swift */; };
+		5F9359361AD8E4F9004BA1B1 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60CBAB1AD25EE7009C8228 /* DataProvider.swift */; };
+		5F9359371AD8E50B004BA1B1 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8B0B91AD03C520097AFFA /* Song.swift */; };
+		5F9359381AD8E59B004BA1B1 /* HttpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8B0B01AD025600097AFFA /* HttpProtocol.swift */; };
+		5F9359391AD8E95F004BA1B1 /* Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8B24A1AD0C5FB003EDC09 /* Public.swift */; };
+		5F93593A1AD8E965004BA1B1 /* SongLrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F60CBAD1AD281EC009C8228 /* SongLrc.swift */; };
+		5FA1111E1AD8BB2400D7F81E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA1111D1AD8BB2400D7F81E /* InterfaceController.swift */; };
+		5FA111201AD8BB2400D7F81E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1111F1AD8BB2400D7F81E /* Images.xcassets */; };
+		5FA111241AD8BB2400D7F81E /* QQMusic WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 5FA111231AD8BB2400D7F81E /* QQMusic WatchKit App.app */; };
+		5FA1112C1AD8BB2400D7F81E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1112A1AD8BB2400D7F81E /* Interface.storyboard */; };
+		5FA1112E1AD8BB2400D7F81E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1112D1AD8BB2400D7F81E /* Images.xcassets */; };
+		5FA111311AD8BB2400D7F81E /* QQMusic WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5FA111191AD8BB2400D7F81E /* QQMusic WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5FA8B24B1AD0C5FB003EDC09 /* Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8B24A1AD0C5FB003EDC09 /* Public.swift */; };
+		5FD8B0AF1AD013EC0097AFFA /* PlayListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD8B0AE1AD013EC0097AFFA /* PlayListView.xib */; };
+		5FD8B0B11AD025600097AFFA /* HttpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8B0B01AD025600097AFFA /* HttpProtocol.swift */; };
+		5FD8B0BA1AD03C520097AFFA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8B0B91AD03C520097AFFA /* Song.swift */; };
+		A4F787F31ADD0C87003561BD /* Kiss Me Babe, It's Christmas Time - Single.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4F787F21ADD0C87003561BD /* Kiss Me Babe, It's Christmas Time - Single.jpg */; };
+		A4F787F51ADD114A003561BD /* Untitled.tiff in Resources */ = {isa = PBXBuildFile; fileRef = A4F787F41ADD114A003561BD /* Untitled.tiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F864CB61ACFAEAB00FEA39D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F864C981ACFAEAB00FEA39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F864C9F1ACFAEAB00FEA39D;
+			remoteInfo = QQMusic;
+		};
+		5FA111251AD8BB2400D7F81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F864C981ACFAEAB00FEA39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA111221AD8BB2400D7F81E;
+			remoteInfo = "QQMusic WatchKit App";
+		};
+		5FA1112F1AD8BB2400D7F81E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F864C981ACFAEAB00FEA39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA111181AD8BB2400D7F81E;
+			remoteInfo = "QQMusic WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FA110EE1AD8B78300D7F81E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5FA111311AD8BB2400D7F81E /* QQMusic WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F11EA5E1AD904DA004A24EF /* SongListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListController.swift; sourceTree = "<group>"; };
+		5F11EA601AD9076C004A24EF /* SongRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongRowController.swift; sourceTree = "<group>"; };
+		5F60CBAB1AD25EE7009C8228 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		5F60CBAD1AD281EC009C8228 /* SongLrc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongLrc.swift; sourceTree = "<group>"; };
+		5F864CA01ACFAEAB00FEA39D /* QQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F864CA41ACFAEAB00FEA39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F864CA51ACFAEAB00FEA39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F864CA71ACFAEAB00FEA39D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F864CAA1ACFAEAB00FEA39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F864CAC1ACFAEAB00FEA39D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F864CAF1ACFAEAB00FEA39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5F864CB51ACFAEAB00FEA39D /* QQMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F864CBA1ACFAEAB00FEA39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F864CBB1ACFAEAB00FEA39D /* QQMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQMusicTests.swift; sourceTree = "<group>"; };
+		5F864CC61ACFB70D00FEA39D /* 239780136.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 239780136.jpg; sourceTree = "<group>"; };
+		5F864CC71ACFB70D00FEA39D /* actionbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "actionbutton@2x.png"; sourceTree = "<group>"; };
+		5F864CC81ACFB70D00FEA39D /* actionIconLike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "actionIconLike@2x.png"; sourceTree = "<group>"; };
+		5F864CC91ACFB70D00FEA39D /* actionIconLikeSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "actionIconLikeSelected@2x.png"; sourceTree = "<group>"; };
+		5F864CCA1ACFB70D00FEA39D /* bannerTips_topokSQ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bannerTips_topokSQ@2x.png"; sourceTree = "<group>"; };
+		5F864CCB1ACFB70D00FEA39D /* channel_song_list_play_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_song_list_play_btn@2x.png"; sourceTree = "<group>"; };
+		5F864CCC1ACFB70D00FEA39D /* channel_song_list_play_btn_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_song_list_play_btn_h@2x.png"; sourceTree = "<group>"; };
+		5F864CCD1ACFB70D00FEA39D /* channel_songFolderList_playAll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_songFolderList_playAll@2x.png"; sourceTree = "<group>"; };
+		5F864CCE1ACFB70D00FEA39D /* channel_songFolderList_playAll_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "channel_songFolderList_playAll_h@2x.png"; sourceTree = "<group>"; };
+		5F864CCF1ACFB70D00FEA39D /* icon_operate_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_operate_play@2x.png"; sourceTree = "<group>"; };
+		5F864CD01ACFB70D00FEA39D /* icon_operate_play_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_operate_play_pressed@2x.png"; sourceTree = "<group>"; };
+		5F864CD11ACFB70D00FEA39D /* mymuisc_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mymuisc_more@2x.png"; sourceTree = "<group>"; };
+		5F864CD21ACFB70D00FEA39D /* nowplay_recommend_selected_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nowplay_recommend_selected_cell@2x.png"; sourceTree = "<group>"; };
+		5F864CD31ACFB70D00FEA39D /* nowplaying_playlist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nowplaying_playlist@2x.png"; sourceTree = "<group>"; };
+		5F864CD41ACFB70D00FEA39D /* nowplaying_random@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nowplaying_random@2x.png"; sourceTree = "<group>"; };
+		5F864CD51ACFB70D00FEA39D /* nowplaying_random_h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nowplaying_random_h@2x.png"; sourceTree = "<group>"; };
+		5F864CD61ACFB70D00FEA39D /* nowplaying_section_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nowplaying_section_bg@2x.png"; sourceTree = "<group>"; };
+		5F864CD71ACFB70D00FEA39D /* player_btn_download_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_download_disable@2x.png"; sourceTree = "<group>"; };
+		5F864CD81ACFB70D00FEA39D /* player_btn_download_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_download_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CD91ACFB70D00FEA39D /* player_btn_download_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_download_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CDA1ACFB70D00FEA39D /* player_btn_favorite_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_favorite_disable@2x.png"; sourceTree = "<group>"; };
+		5F864CDB1ACFB70D00FEA39D /* player_btn_favorite_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_favorite_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CDC1ACFB70D00FEA39D /* player_btn_favorite_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_favorite_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CDD1ACFB70D00FEA39D /* player_btn_favorited_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_favorited_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CDE1ACFB70D00FEA39D /* player_btn_favorited_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_favorited_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CDF1ACFB70D00FEA39D /* player_btn_hq_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_hq_disable@2x.png"; sourceTree = "<group>"; };
+		5F864CE01ACFB70D00FEA39D /* player_btn_more_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_more_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CE11ACFB70D00FEA39D /* player_btn_more_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_more_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CE21ACFB70D00FEA39D /* player_btn_next_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_next_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CE31ACFB70D00FEA39D /* player_btn_next_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_next_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CE41ACFB70D00FEA39D /* player_btn_pause_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_pause_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CE51ACFB70D00FEA39D /* player_btn_pause_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_pause_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CE61ACFB70D00FEA39D /* player_btn_play_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_play_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CE71ACFB70D00FEA39D /* player_btn_play_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_play_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CE81ACFB70D00FEA39D /* player_btn_playlist_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_playlist_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CE91ACFB70D00FEA39D /* player_btn_playlist_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_playlist_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CEA1ACFB70D00FEA39D /* player_btn_pre_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_pre_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864CEB1ACFB70D00FEA39D /* player_btn_pre_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_pre_normal@2x.png"; sourceTree = "<group>"; };
+		5F864CEC1ACFB70D00FEA39D /* player_btn_sq_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_sq_disable@2x.png"; sourceTree = "<group>"; };
+		5F864D141ACFD02900FEA39D /* player_btn_radio_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_radio_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D151ACFD02900FEA39D /* player_btn_radiolist_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_radiolist_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864D161ACFD02900FEA39D /* player_btn_radiolist_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_radiolist_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D171ACFD02900FEA39D /* player_btn_random_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_random_disable@2x.png"; sourceTree = "<group>"; };
+		5F864D181ACFD02900FEA39D /* player_btn_random_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_random_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864D191ACFD02900FEA39D /* player_btn_random_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_random_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D1A1ACFD02900FEA39D /* player_btn_repeat_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_repeat_disable@2x.png"; sourceTree = "<group>"; };
+		5F864D1B1ACFD02900FEA39D /* player_btn_repeat_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_repeat_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864D1C1ACFD02900FEA39D /* player_btn_repeat_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_repeat_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D1D1ACFD02900FEA39D /* player_btn_repeatone_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_repeatone_disable@2x.png"; sourceTree = "<group>"; };
+		5F864D1E1ACFD02900FEA39D /* player_btn_repeatone_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_repeatone_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864D1F1ACFD02900FEA39D /* player_btn_repeatone_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_repeatone_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D201ACFD02900FEA39D /* player_btn_share_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_share_disable@2x.png"; sourceTree = "<group>"; };
+		5F864D211ACFD02900FEA39D /* player_btn_share_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_share_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864D221ACFD02900FEA39D /* player_btn_share_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_share_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D231ACFD02900FEA39D /* player_btn_trash_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_trash_highlight@2x.png"; sourceTree = "<group>"; };
+		5F864D241ACFD02900FEA39D /* player_btn_trash_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_btn_trash_normal@2x.png"; sourceTree = "<group>"; };
+		5F864D361ACFD33C00FEA39D /* player_slider_playback_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_slider_playback_left@2x.png"; sourceTree = "<group>"; };
+		5F864D371ACFD33C00FEA39D /* player_slider_playback_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_slider_playback_right@2x.png"; sourceTree = "<group>"; };
+		5F864D381ACFD33C00FEA39D /* player_slider_playback_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_slider_playback_thumb@2x.png"; sourceTree = "<group>"; };
+		5F864D3C1ACFE38200FEA39D /* PlayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListView.swift; sourceTree = "<group>"; };
+		5FA111191AD8BB2400D7F81E /* QQMusic WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QQMusic WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA1111C1AD8BB2400D7F81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA1111D1AD8BB2400D7F81E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5FA1111F1AD8BB2400D7F81E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FA111231AD8BB2400D7F81E /* QQMusic WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QQMusic WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA111291AD8BB2400D7F81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA1112B1AD8BB2400D7F81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5FA1112D1AD8BB2400D7F81E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FA8B24A1AD0C5FB003EDC09 /* Public.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Public.swift; sourceTree = "<group>"; };
+		5FD8B0AE1AD013EC0097AFFA /* PlayListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayListView.xib; sourceTree = "<group>"; };
+		5FD8B0B01AD025600097AFFA /* HttpProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpProtocol.swift; sourceTree = "<group>"; };
+		5FD8B0B91AD03C520097AFFA /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		A4F787F21ADD0C87003561BD /* Kiss Me Babe, It's Christmas Time - Single.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kiss Me Babe, It's Christmas Time - Single.jpg"; sourceTree = "<group>"; };
+		A4F787F41ADD114A003561BD /* Untitled.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Untitled.tiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F864C9D1ACFAEAB00FEA39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F864CB21ACFAEAB00FEA39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA111161AD8BB2400D7F81E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F864C971ACFAEAB00FEA39D = {
+			isa = PBXGroup;
+			children = (
+				5F864CA21ACFAEAB00FEA39D /* MusicPlayer */,
+				5F864CB81ACFAEAB00FEA39D /* QQMusicTests */,
+				5FA1111A1AD8BB2400D7F81E /* QQMusic WatchKit Extension */,
+				5FA111271AD8BB2400D7F81E /* QQMusic WatchKit App */,
+				5F864CA11ACFAEAB00FEA39D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F864CA11ACFAEAB00FEA39D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F864CA01ACFAEAB00FEA39D /* QQMusic.app */,
+				5F864CB51ACFAEAB00FEA39D /* QQMusicTests.xctest */,
+				5FA111191AD8BB2400D7F81E /* QQMusic WatchKit Extension.appex */,
+				5FA111231AD8BB2400D7F81E /* QQMusic WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F864CA21ACFAEAB00FEA39D /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8B0B81AD03C160097AFFA /* Class */,
+				5FD8B0B41AD03BB30097AFFA /* Model */,
+				5FD8B0B51AD03BC20097AFFA /* View */,
+				5FD8B0B61AD03BC70097AFFA /* Controller */,
+				5FD8B0B71AD03C020097AFFA /* Other */,
+				5F864CC51ACFB70D00FEA39D /* Resource */,
+				5F864CA31ACFAEAB00FEA39D /* Supporting Files */,
+			);
+			name = MusicPlayer;
+			path = QQMusic;
+			sourceTree = "<group>";
+		};
+		5F864CA31ACFAEAB00FEA39D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F864CA41ACFAEAB00FEA39D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F864CB81ACFAEAB00FEA39D /* QQMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F864CBB1ACFAEAB00FEA39D /* QQMusicTests.swift */,
+				5F864CB91ACFAEAB00FEA39D /* Supporting Files */,
+			);
+			path = QQMusicTests;
+			sourceTree = "<group>";
+		};
+		5F864CB91ACFAEAB00FEA39D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F864CBA1ACFAEAB00FEA39D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F864CC51ACFB70D00FEA39D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A4F787F41ADD114A003561BD /* Untitled.tiff */,
+				A4F787F21ADD0C87003561BD /* Kiss Me Babe, It's Christmas Time - Single.jpg */,
+				5F864D361ACFD33C00FEA39D /* player_slider_playback_left@2x.png */,
+				5F864D371ACFD33C00FEA39D /* player_slider_playback_right@2x.png */,
+				5F864D381ACFD33C00FEA39D /* player_slider_playback_thumb@2x.png */,
+				5F864D141ACFD02900FEA39D /* player_btn_radio_normal@2x.png */,
+				5F864D151ACFD02900FEA39D /* player_btn_radiolist_highlight@2x.png */,
+				5F864D161ACFD02900FEA39D /* player_btn_radiolist_normal@2x.png */,
+				5F864D171ACFD02900FEA39D /* player_btn_random_disable@2x.png */,
+				5F864D181ACFD02900FEA39D /* player_btn_random_highlight@2x.png */,
+				5F864D191ACFD02900FEA39D /* player_btn_random_normal@2x.png */,
+				5F864D1A1ACFD02900FEA39D /* player_btn_repeat_disable@2x.png */,
+				5F864D1B1ACFD02900FEA39D /* player_btn_repeat_highlight@2x.png */,
+				5F864D1C1ACFD02900FEA39D /* player_btn_repeat_normal@2x.png */,
+				5F864D1D1ACFD02900FEA39D /* player_btn_repeatone_disable@2x.png */,
+				5F864D1E1ACFD02900FEA39D /* player_btn_repeatone_highlight@2x.png */,
+				5F864D1F1ACFD02900FEA39D /* player_btn_repeatone_normal@2x.png */,
+				5F864D201ACFD02900FEA39D /* player_btn_share_disable@2x.png */,
+				5F864D211ACFD02900FEA39D /* player_btn_share_highlight@2x.png */,
+				5F864D221ACFD02900FEA39D /* player_btn_share_normal@2x.png */,
+				5F864D231ACFD02900FEA39D /* player_btn_trash_highlight@2x.png */,
+				5F864D241ACFD02900FEA39D /* player_btn_trash_normal@2x.png */,
+				5F864CC61ACFB70D00FEA39D /* 239780136.jpg */,
+				5F864CC71ACFB70D00FEA39D /* actionbutton@2x.png */,
+				5F864CC81ACFB70D00FEA39D /* actionIconLike@2x.png */,
+				5F864CC91ACFB70D00FEA39D /* actionIconLikeSelected@2x.png */,
+				5F864CCA1ACFB70D00FEA39D /* bannerTips_topokSQ@2x.png */,
+				5F864CCB1ACFB70D00FEA39D /* channel_song_list_play_btn@2x.png */,
+				5F864CCC1ACFB70D00FEA39D /* channel_song_list_play_btn_h@2x.png */,
+				5F864CCD1ACFB70D00FEA39D /* channel_songFolderList_playAll@2x.png */,
+				5F864CCE1ACFB70D00FEA39D /* channel_songFolderList_playAll_h@2x.png */,
+				5F864CCF1ACFB70D00FEA39D /* icon_operate_play@2x.png */,
+				5F864CD01ACFB70D00FEA39D /* icon_operate_play_pressed@2x.png */,
+				5F864CD11ACFB70D00FEA39D /* mymuisc_more@2x.png */,
+				5F864CD21ACFB70D00FEA39D /* nowplay_recommend_selected_cell@2x.png */,
+				5F864CD31ACFB70D00FEA39D /* nowplaying_playlist@2x.png */,
+				5F864CD41ACFB70D00FEA39D /* nowplaying_random@2x.png */,
+				5F864CD51ACFB70D00FEA39D /* nowplaying_random_h@2x.png */,
+				5F864CD61ACFB70D00FEA39D /* nowplaying_section_bg@2x.png */,
+				5F864CD71ACFB70D00FEA39D /* player_btn_download_disable@2x.png */,
+				5F864CD81ACFB70D00FEA39D /* player_btn_download_highlight@2x.png */,
+				5F864CD91ACFB70D00FEA39D /* player_btn_download_normal@2x.png */,
+				5F864CDA1ACFB70D00FEA39D /* player_btn_favorite_disable@2x.png */,
+				5F864CDB1ACFB70D00FEA39D /* player_btn_favorite_highlight@2x.png */,
+				5F864CDC1ACFB70D00FEA39D /* player_btn_favorite_normal@2x.png */,
+				5F864CDD1ACFB70D00FEA39D /* player_btn_favorited_highlight@2x.png */,
+				5F864CDE1ACFB70D00FEA39D /* player_btn_favorited_normal@2x.png */,
+				5F864CDF1ACFB70D00FEA39D /* player_btn_hq_disable@2x.png */,
+				5F864CE01ACFB70D00FEA39D /* player_btn_more_highlight@2x.png */,
+				5F864CE11ACFB70D00FEA39D /* player_btn_more_normal@2x.png */,
+				5F864CE21ACFB70D00FEA39D /* player_btn_next_highlight@2x.png */,
+				5F864CE31ACFB70D00FEA39D /* player_btn_next_normal@2x.png */,
+				5F864CE41ACFB70D00FEA39D /* player_btn_pause_highlight@2x.png */,
+				5F864CE51ACFB70D00FEA39D /* player_btn_pause_normal@2x.png */,
+				5F864CE61ACFB70D00FEA39D /* player_btn_play_highlight@2x.png */,
+				5F864CE71ACFB70D00FEA39D /* player_btn_play_normal@2x.png */,
+				5F864CE81ACFB70D00FEA39D /* player_btn_playlist_highlight@2x.png */,
+				5F864CE91ACFB70D00FEA39D /* player_btn_playlist_normal@2x.png */,
+				5F864CEA1ACFB70D00FEA39D /* player_btn_pre_highlight@2x.png */,
+				5F864CEB1ACFB70D00FEA39D /* player_btn_pre_normal@2x.png */,
+				5F864CEC1ACFB70D00FEA39D /* player_btn_sq_disable@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5FA1111A1AD8BB2400D7F81E /* QQMusic WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1111D1AD8BB2400D7F81E /* InterfaceController.swift */,
+				5F11EA5E1AD904DA004A24EF /* SongListController.swift */,
+				5F11EA601AD9076C004A24EF /* SongRowController.swift */,
+				5FA1111F1AD8BB2400D7F81E /* Images.xcassets */,
+				5FA1111B1AD8BB2400D7F81E /* Supporting Files */,
+			);
+			path = "QQMusic WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5FA1111B1AD8BB2400D7F81E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1111C1AD8BB2400D7F81E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FA111271AD8BB2400D7F81E /* QQMusic WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1112A1AD8BB2400D7F81E /* Interface.storyboard */,
+				5FA1112D1AD8BB2400D7F81E /* Images.xcassets */,
+				5FA111281AD8BB2400D7F81E /* Supporting Files */,
+			);
+			path = "QQMusic WatchKit App";
+			sourceTree = "<group>";
+		};
+		5FA111281AD8BB2400D7F81E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA111291AD8BB2400D7F81E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FD8B0B41AD03BB30097AFFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8B0B91AD03C520097AFFA /* Song.swift */,
+				5F60CBAD1AD281EC009C8228 /* SongLrc.swift */,
+				5F60CBAB1AD25EE7009C8228 /* DataProvider.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FD8B0B51AD03BC20097AFFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F864D3C1ACFE38200FEA39D /* PlayListView.swift */,
+				5FD8B0AE1AD013EC0097AFFA /* PlayListView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FD8B0B61AD03BC70097AFFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F864CA71ACFAEAB00FEA39D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FD8B0B71AD03C020097AFFA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5F864CA51ACFAEAB00FEA39D /* AppDelegate.swift */,
+				5F864CA91ACFAEAB00FEA39D /* Main.storyboard */,
+				5F864CAC1ACFAEAB00FEA39D /* Images.xcassets */,
+				5F864CAE1ACFAEAB00FEA39D /* LaunchScreen.xib */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		5FD8B0B81AD03C160097AFFA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8B0B01AD025600097AFFA /* HttpProtocol.swift */,
+				5FA8B24A1AD0C5FB003EDC09 /* Public.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F864C9F1ACFAEAB00FEA39D /* QQMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F864CBF1ACFAEAB00FEA39D /* Build configuration list for PBXNativeTarget "QQMusic" */;
+			buildPhases = (
+				5F864C9C1ACFAEAB00FEA39D /* Sources */,
+				5F864C9D1ACFAEAB00FEA39D /* Frameworks */,
+				5F864C9E1ACFAEAB00FEA39D /* Resources */,
+				5FA110EE1AD8B78300D7F81E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA111301AD8BB2400D7F81E /* PBXTargetDependency */,
+			);
+			name = QQMusic;
+			productName = QQMusic;
+			productReference = 5F864CA01ACFAEAB00FEA39D /* QQMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F864CB41ACFAEAB00FEA39D /* QQMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F864CC21ACFAEAB00FEA39D /* Build configuration list for PBXNativeTarget "QQMusicTests" */;
+			buildPhases = (
+				5F864CB11ACFAEAB00FEA39D /* Sources */,
+				5F864CB21ACFAEAB00FEA39D /* Frameworks */,
+				5F864CB31ACFAEAB00FEA39D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F864CB71ACFAEAB00FEA39D /* PBXTargetDependency */,
+			);
+			name = QQMusicTests;
+			productName = QQMusicTests;
+			productReference = 5F864CB51ACFAEAB00FEA39D /* QQMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FA111181AD8BB2400D7F81E /* QQMusic WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA111351AD8BB2500D7F81E /* Build configuration list for PBXNativeTarget "QQMusic WatchKit Extension" */;
+			buildPhases = (
+				5FA111151AD8BB2400D7F81E /* Sources */,
+				5FA111161AD8BB2400D7F81E /* Frameworks */,
+				5FA111171AD8BB2400D7F81E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA111261AD8BB2400D7F81E /* PBXTargetDependency */,
+			);
+			name = "QQMusic WatchKit Extension";
+			productName = "QQMusic WatchKit Extension";
+			productReference = 5FA111191AD8BB2400D7F81E /* QQMusic WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		5FA111221AD8BB2400D7F81E /* QQMusic WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA111321AD8BB2500D7F81E /* Build configuration list for PBXNativeTarget "QQMusic WatchKit App" */;
+			buildPhases = (
+				5FA111211AD8BB2400D7F81E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QQMusic WatchKit App";
+			productName = "QQMusic WatchKit App";
+			productReference = 5FA111231AD8BB2400D7F81E /* QQMusic WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F864C981ACFAEAB00FEA39D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "小五哥Swift教程";
+				TargetAttributes = {
+					5F864C9F1ACFAEAB00FEA39D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5F864CB41ACFAEAB00FEA39D = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 5F864C9F1ACFAEAB00FEA39D;
+					};
+					5FA111181AD8BB2400D7F81E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5FA111221AD8BB2400D7F81E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 5F864C9B1ACFAEAB00FEA39D /* Build configuration list for PBXProject "QQMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F864C971ACFAEAB00FEA39D;
+			productRefGroup = 5F864CA11ACFAEAB00FEA39D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F864C9F1ACFAEAB00FEA39D /* QQMusic */,
+				5F864CB41ACFAEAB00FEA39D /* QQMusicTests */,
+				5FA111181AD8BB2400D7F81E /* QQMusic WatchKit Extension */,
+				5FA111221AD8BB2400D7F81E /* QQMusic WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F864C9E1ACFAEAB00FEA39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F864D2D1ACFD02900FEA39D /* player_btn_repeat_normal@2x.png in Resources */,
+				5F864CF81ACFB70D00FEA39D /* mymuisc_more@2x.png in Resources */,
+				A4F787F31ADD0C87003561BD /* Kiss Me Babe, It's Christmas Time - Single.jpg in Resources */,
+				5F864CEF1ACFB70D00FEA39D /* actionIconLike@2x.png in Resources */,
+				5F864CFA1ACFB70D00FEA39D /* nowplaying_playlist@2x.png in Resources */,
+				5F864CEE1ACFB70D00FEA39D /* actionbutton@2x.png in Resources */,
+				5FD8B0AF1AD013EC0097AFFA /* PlayListView.xib in Resources */,
+				5F864D291ACFD02900FEA39D /* player_btn_random_highlight@2x.png in Resources */,
+				5F864D311ACFD02900FEA39D /* player_btn_share_disable@2x.png in Resources */,
+				5F864D351ACFD02900FEA39D /* player_btn_trash_normal@2x.png in Resources */,
+				5F864D091ACFB70D00FEA39D /* player_btn_next_highlight@2x.png in Resources */,
+				5F864CAB1ACFAEAB00FEA39D /* Main.storyboard in Resources */,
+				5F864D011ACFB70D00FEA39D /* player_btn_favorite_disable@2x.png in Resources */,
+				5F864D3A1ACFD33C00FEA39D /* player_slider_playback_right@2x.png in Resources */,
+				5F864CFB1ACFB70D00FEA39D /* nowplaying_random@2x.png in Resources */,
+				5F864D281ACFD02900FEA39D /* player_btn_random_disable@2x.png in Resources */,
+				5F864D331ACFD02900FEA39D /* player_btn_share_normal@2x.png in Resources */,
+				5F864CF31ACFB70D00FEA39D /* channel_song_list_play_btn_h@2x.png in Resources */,
+				5F864CF51ACFB70D00FEA39D /* channel_songFolderList_playAll_h@2x.png in Resources */,
+				5F864D2C1ACFD02900FEA39D /* player_btn_repeat_highlight@2x.png in Resources */,
+				5F864D0B1ACFB70D00FEA39D /* player_btn_pause_highlight@2x.png in Resources */,
+				5F864D101ACFB70D00FEA39D /* player_btn_playlist_normal@2x.png in Resources */,
+				5F864D271ACFD02900FEA39D /* player_btn_radiolist_normal@2x.png in Resources */,
+				5F864D2B1ACFD02900FEA39D /* player_btn_repeat_disable@2x.png in Resources */,
+				5F864D0C1ACFB70D00FEA39D /* player_btn_pause_normal@2x.png in Resources */,
+				5F864D301ACFD02900FEA39D /* player_btn_repeatone_normal@2x.png in Resources */,
+				5F864D001ACFB70D00FEA39D /* player_btn_download_normal@2x.png in Resources */,
+				5F864CF01ACFB70D00FEA39D /* actionIconLikeSelected@2x.png in Resources */,
+				5F864D2E1ACFD02900FEA39D /* player_btn_repeatone_disable@2x.png in Resources */,
+				5F864D131ACFB70D00FEA39D /* player_btn_sq_disable@2x.png in Resources */,
+				5F864CF11ACFB70D00FEA39D /* bannerTips_topokSQ@2x.png in Resources */,
+				5F864CB01ACFAEAB00FEA39D /* LaunchScreen.xib in Resources */,
+				5F864D031ACFB70D00FEA39D /* player_btn_favorite_normal@2x.png in Resources */,
+				5F864D391ACFD33C00FEA39D /* player_slider_playback_left@2x.png in Resources */,
+				5F864D3B1ACFD33C00FEA39D /* player_slider_playback_thumb@2x.png in Resources */,
+				5F864D0A1ACFB70D00FEA39D /* player_btn_next_normal@2x.png in Resources */,
+				5F864D021ACFB70D00FEA39D /* player_btn_favorite_highlight@2x.png in Resources */,
+				5F864CFC1ACFB70D00FEA39D /* nowplaying_random_h@2x.png in Resources */,
+				A4F787F51ADD114A003561BD /* Untitled.tiff in Resources */,
+				5F864D071ACFB70D00FEA39D /* player_btn_more_highlight@2x.png in Resources */,
+				5F864CF21ACFB70D00FEA39D /* channel_song_list_play_btn@2x.png in Resources */,
+				5F864CAD1ACFAEAB00FEA39D /* Images.xcassets in Resources */,
+				5F864D121ACFB70D00FEA39D /* player_btn_pre_normal@2x.png in Resources */,
+				5F864D081ACFB70D00FEA39D /* player_btn_more_normal@2x.png in Resources */,
+				5F864D111ACFB70D00FEA39D /* player_btn_pre_highlight@2x.png in Resources */,
+				5F864CF61ACFB70D00FEA39D /* icon_operate_play@2x.png in Resources */,
+				5F864D061ACFB70D00FEA39D /* player_btn_hq_disable@2x.png in Resources */,
+				5F864D251ACFD02900FEA39D /* player_btn_radio_normal@2x.png in Resources */,
+				5F864D0D1ACFB70D00FEA39D /* player_btn_play_highlight@2x.png in Resources */,
+				5F864CFF1ACFB70D00FEA39D /* player_btn_download_highlight@2x.png in Resources */,
+				5F864D2A1ACFD02900FEA39D /* player_btn_random_normal@2x.png in Resources */,
+				5F864D041ACFB70D00FEA39D /* player_btn_favorited_highlight@2x.png in Resources */,
+				5F864CF41ACFB70D00FEA39D /* channel_songFolderList_playAll@2x.png in Resources */,
+				5F864D321ACFD02900FEA39D /* player_btn_share_highlight@2x.png in Resources */,
+				5F864D0E1ACFB70D00FEA39D /* player_btn_play_normal@2x.png in Resources */,
+				5F864D051ACFB70D00FEA39D /* player_btn_favorited_normal@2x.png in Resources */,
+				5F864CF91ACFB70D00FEA39D /* nowplay_recommend_selected_cell@2x.png in Resources */,
+				5F864CFE1ACFB70D00FEA39D /* player_btn_download_disable@2x.png in Resources */,
+				5F864D261ACFD02900FEA39D /* player_btn_radiolist_highlight@2x.png in Resources */,
+				5F864CFD1ACFB70D00FEA39D /* nowplaying_section_bg@2x.png in Resources */,
+				5F864D0F1ACFB70D00FEA39D /* player_btn_playlist_highlight@2x.png in Resources */,
+				5F864D341ACFD02900FEA39D /* player_btn_trash_highlight@2x.png in Resources */,
+				5F864CF71ACFB70D00FEA39D /* icon_operate_play_pressed@2x.png in Resources */,
+				5F864D2F1ACFD02900FEA39D /* player_btn_repeatone_highlight@2x.png in Resources */,
+				5F864CED1ACFB70D00FEA39D /* 239780136.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F864CB31ACFAEAB00FEA39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA111171AD8BB2400D7F81E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA111241AD8BB2400D7F81E /* QQMusic WatchKit App.app in Resources */,
+				5FA111201AD8BB2400D7F81E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA111211AD8BB2400D7F81E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA1112C1AD8BB2400D7F81E /* Interface.storyboard in Resources */,
+				5FA1112E1AD8BB2400D7F81E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F864C9C1ACFAEAB00FEA39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F60CBAE1AD281EC009C8228 /* SongLrc.swift in Sources */,
+				5F864CA81ACFAEAB00FEA39D /* ViewController.swift in Sources */,
+				5F864CA61ACFAEAB00FEA39D /* AppDelegate.swift in Sources */,
+				5FA8B24B1AD0C5FB003EDC09 /* Public.swift in Sources */,
+				5F60CBAC1AD25EE7009C8228 /* DataProvider.swift in Sources */,
+				5F864D3D1ACFE38200FEA39D /* PlayListView.swift in Sources */,
+				5FD8B0B11AD025600097AFFA /* HttpProtocol.swift in Sources */,
+				5FD8B0BA1AD03C520097AFFA /* Song.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F864CB11ACFAEAB00FEA39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F864CBC1ACFAEAB00FEA39D /* QQMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA111151AD8BB2400D7F81E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F93593A1AD8E965004BA1B1 /* SongLrc.swift in Sources */,
+				5F9359391AD8E95F004BA1B1 /* Public.swift in Sources */,
+				5F9359381AD8E59B004BA1B1 /* HttpProtocol.swift in Sources */,
+				5F9359371AD8E50B004BA1B1 /* Song.swift in Sources */,
+				5F11EA5F1AD904DA004A24EF /* SongListController.swift in Sources */,
+				5F11EA611AD9076C004A24EF /* SongRowController.swift in Sources */,
+				5F9359361AD8E4F9004BA1B1 /* DataProvider.swift in Sources */,
+				5FA1111E1AD8BB2400D7F81E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F864CB71ACFAEAB00FEA39D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F864C9F1ACFAEAB00FEA39D /* QQMusic */;
+			targetProxy = 5F864CB61ACFAEAB00FEA39D /* PBXContainerItemProxy */;
+		};
+		5FA111261AD8BB2400D7F81E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA111221AD8BB2400D7F81E /* QQMusic WatchKit App */;
+			targetProxy = 5FA111251AD8BB2400D7F81E /* PBXContainerItemProxy */;
+		};
+		5FA111301AD8BB2400D7F81E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA111181AD8BB2400D7F81E /* QQMusic WatchKit Extension */;
+			targetProxy = 5FA1112F1AD8BB2400D7F81E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F864CA91ACFAEAB00FEA39D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F864CAA1ACFAEAB00FEA39D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F864CAE1ACFAEAB00FEA39D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F864CAF1ACFAEAB00FEA39D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		5FA1112A1AD8BB2400D7F81E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA1112B1AD8BB2400D7F81E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F864CBD1ACFAEAB00FEA39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F864CBE1ACFAEAB00FEA39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F864CC01ACFAEAB00FEA39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = QQMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F864CC11ACFAEAB00FEA39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = QQMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F864CC31ACFAEAB00FEA39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QQMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQMusic.app/QQMusic";
+			};
+			name = Debug;
+		};
+		5F864CC41ACFAEAB00FEA39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QQMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQMusic.app/QQMusic";
+			};
+			name = Release;
+		};
+		5FA111331AD8BB2500D7F81E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = QQMusic_WatchKit_Extension;
+				INFOPLIST_FILE = "QQMusic WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		5FA111341AD8BB2500D7F81E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = QQMusic_WatchKit_Extension;
+				INFOPLIST_FILE = "QQMusic WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		5FA111361AD8BB2500D7F81E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QQMusic WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5FA111371AD8BB2500D7F81E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "QQMusic WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F864C9B1ACFAEAB00FEA39D /* Build configuration list for PBXProject "QQMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F864CBD1ACFAEAB00FEA39D /* Debug */,
+				5F864CBE1ACFAEAB00FEA39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F864CBF1ACFAEAB00FEA39D /* Build configuration list for PBXNativeTarget "QQMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F864CC01ACFAEAB00FEA39D /* Debug */,
+				5F864CC11ACFAEAB00FEA39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F864CC21ACFAEAB00FEA39D /* Build configuration list for PBXNativeTarget "QQMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F864CC31ACFAEAB00FEA39D /* Debug */,
+				5F864CC41ACFAEAB00FEA39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA111321AD8BB2500D7F81E /* Build configuration list for PBXNativeTarget "QQMusic WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA111331AD8BB2500D7F81E /* Debug */,
+				5FA111341AD8BB2500D7F81E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA111351AD8BB2500D7F81E /* Build configuration list for PBXNativeTarget "QQMusic WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA111361AD8BB2500D7F81E /* Debug */,
+				5FA111371AD8BB2500D7F81E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F864C981ACFAEAB00FEA39D /* Project object */;
+}

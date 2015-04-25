@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayListView" customModule="QQMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIO-t2-d2l" userLabel="viewTouch" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="closePlayListView:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZX1-8H-1Dp"/>
+                    </connections>
+                </view>
+                <view alpha="0.5499999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OF7-fs-f9J" userLabel="ViewBackground">
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCJ-tG-TCl" userLabel="ViewContent">
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" alpha="0.5499999999999996" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rtw-3Y-Fub">
+                            <rect key="frame" x="0.0" y="45" width="375" height="376"/>
+                            <color key="backgroundColor" red="0.66666668653488159" green="0.64702913248378091" blue="0.22646009288681204" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="hOQ-0o-RUN"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="OI4-Dq-ZqJ"/>
+                            </connections>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist (Total 10 Songs)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-qY-eJO">
+                            <rect key="frame" x="106" y="11" width="163" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okf-0K-xL1">
+                            <rect key="frame" x="271" y="426" width="44" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closePlayListView:" destination="iN0-l3-epB" eventType="touchUpInside" id="ahZ-2V-Y1O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trs-78-S6O">
+                            <rect key="frame" x="60" y="427" width="104" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Next Channel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="nextChannel:" destination="iN0-l3-epB" eventType="touchUpInside" id="BGb-CI-hoh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="okf-0K-xL1" secondAttribute="trailing" constant="60" id="5YS-uE-RhI"/>
+                        <constraint firstAttribute="centerX" secondItem="Rtw-3Y-Fub" secondAttribute="centerX" id="6Ja-GN-mNU"/>
+                        <constraint firstItem="Rtw-3Y-Fub" firstAttribute="top" secondItem="uCJ-tG-TCl" secondAttribute="top" constant="45" id="EGl-KB-0TE"/>
+                        <constraint firstAttribute="trailing" secondItem="Rtw-3Y-Fub" secondAttribute="trailing" id="HDR-9c-AcP"/>
+                        <constraint firstItem="trs-78-S6O" firstAttribute="centerY" secondItem="okf-0K-xL1" secondAttribute="centerY" constant="0.5" id="HOI-CR-i6C"/>
+                        <constraint firstItem="ZgG-qY-eJO" firstAttribute="top" secondItem="uCJ-tG-TCl" secondAttribute="top" constant="11" id="IkA-6X-9cJ"/>
+                        <constraint firstAttribute="centerX" secondItem="ZgG-qY-eJO" secondAttribute="centerX" id="MTq-32-DMW"/>
+                        <constraint firstItem="trs-78-S6O" firstAttribute="leading" secondItem="uCJ-tG-TCl" secondAttribute="leading" constant="60" id="Q6A-sM-pz3"/>
+                        <constraint firstAttribute="bottom" secondItem="Rtw-3Y-Fub" secondAttribute="bottom" constant="46" id="UW6-50-0iY"/>
+                        <constraint firstAttribute="bottom" secondItem="okf-0K-xL1" secondAttribute="bottom" constant="8" id="law-co-eNR"/>
+                        <constraint firstItem="Rtw-3Y-Fub" firstAttribute="leading" secondItem="uCJ-tG-TCl" secondAttribute="leading" id="qL5-Jy-edo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OF7-fs-f9J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="F6q-3x-mHP"/>
+                <constraint firstAttribute="bottom" secondItem="uCJ-tG-TCl" secondAttribute="bottom" id="KMa-OB-KqE"/>
+                <constraint firstAttribute="bottom" secondItem="OF7-fs-f9J" secondAttribute="bottom" id="NLT-ja-PPZ"/>
+                <constraint firstAttribute="trailing" secondItem="NIO-t2-d2l" secondAttribute="trailing" id="TJP-A5-kn1"/>
+                <constraint firstItem="NIO-t2-d2l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Um6-us-llX"/>
+                <constraint firstAttribute="trailing" secondItem="uCJ-tG-TCl" secondAttribute="trailing" id="aeu-M3-6iQ"/>
+                <constraint firstAttribute="bottom" secondItem="NIO-t2-d2l" secondAttribute="bottom" id="e8M-LW-PvG"/>
+                <constraint firstItem="NIO-t2-d2l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mc6-t7-WsF"/>
+                <constraint firstItem="uCJ-tG-TCl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="noJ-ZT-VPC"/>
+                <constraint firstAttribute="trailing" secondItem="OF7-fs-f9J" secondAttribute="trailing" id="nxA-o9-qBA"/>
+                <constraint firstItem="uCJ-tG-TCl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="oyR-XU-KW1"/>
+                <constraint firstItem="OF7-fs-f9J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qwe-mY-YQz"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="tableView" destination="Rtw-3Y-Fub" id="84v-5a-OGz"/>
+                <outlet property="titleLabel" destination="ZgG-qY-eJO" id="Ssz-K8-fOx"/>
+                <outlet property="viewBackground" destination="OF7-fs-f9J" id="CDb-9y-wiv"/>
+                <outlet property="viewContent" destination="uCJ-tG-TCl" id="CsO-y8-jqx"/>
+            </connections>
+        </view>
+    </objects>
+</document>

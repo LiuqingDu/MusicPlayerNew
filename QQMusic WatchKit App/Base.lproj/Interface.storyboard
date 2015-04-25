@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="QQMusic_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="单行的轨道" textAlignment="center" id="3zn-V4-HfU">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" id="HHn-WX-B27">
+                            <items>
+                                <imageView width="62" height="62" alignment="center" image="239780136.jpg" contentMode="scaleAspectFit" id="Qu4-Ug-iYP"/>
+                            </items>
+                        </group>
+                        <label width="1" height="20" alignment="left" textAlignment="center" id="fTx-yS-BWN">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <group width="1" alignment="left" id="Nnx-It-MIN">
+                            <items>
+                                <button width="32" height="32" alignment="center" backgroundImage="player_btn_pre_normal.png" id="kps-NG-GQu">
+                                    <connections>
+                                        <action selector="preSong" destination="AgC-eL-Hgc" id="zYa-Ec-Jpt"/>
+                                    </connections>
+                                </button>
+                                <button width="32" height="32" alignment="center" verticalAlignment="center" backgroundImage="player_btn_play_normal.png" id="cS1-3Y-WcO">
+                                    <connections>
+                                        <action selector="playSong" destination="AgC-eL-Hgc" id="Wga-H5-o8i"/>
+                                    </connections>
+                                </button>
+                                <button width="32" height="32" alignment="center" backgroundImage="player_btn_next_normal.png" id="nH4-L8-790">
+                                    <connections>
+                                        <action selector="nextSong" destination="AgC-eL-Hgc" id="a5x-2g-XEj"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" height="22" alignment="left" title="歌曲播放列表" id="kSj-qQ-HLu">
+                            <connections>
+                                <segue destination="xDe-vR-AJ6" kind="modal" identifier="songListSegue" id="RVh-4k-IMa"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="5UV-2S-dqE"/>
+                        <group width="1" alignment="left" id="EIP-fm-yQr">
+                            <items>
+                                <label alignment="left" text="声音:" id="MmV-Ie-jrB"/>
+                            </items>
+                        </group>
+                        <slider alignment="left" value="1" maximum="3" steps="3" id="Lhv-64-HNy"/>
+                        <separator alignment="left" id="JXA-2F-Jry"/>
+                        <button width="1" alignment="left" title="循环播放" id="4QO-kW-bbz"/>
+                        <button width="1" alignment="left" title="收藏歌曲" id="ljT-Ac-S0t"/>
+                        <button width="1" alignment="left" title="下载歌曲" id="LzX-XV-JKv"/>
+                    </items>
+                    <connections>
+                        <outlet property="iconImage" destination="Qu4-Ug-iYP" id="9jV-wm-ffj"/>
+                        <outlet property="lrcLabel" destination="fTx-yS-BWN" id="P7C-bj-5Qy"/>
+                        <outlet property="playButton" destination="cS1-3Y-WcO" id="TLm-Iy-H5p"/>
+                        <outlet property="titleLabel" destination="3zn-V4-HfU" id="7jF-QU-sTP"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Song List Controller-->
+        <scene sceneID="zUq-7l-YKQ">
+            <objects>
+                <controller id="xDe-vR-AJ6" customClass="SongListController" customModule="QQMusic_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="2O8-FN-psq">
+                            <items>
+                                <tableRow identifier="SongRowType" id="Ty4-jJ-Guv" customClass="SongRowController" customModule="QQMusic_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="563-4h-v6V">
+                                        <items>
+                                            <label alignment="left" text="单行的轨道" numberOfLines="2" id="Grc-tX-whP">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            </label>
+                                            <label alignment="left" text="邓紫棋" id="MtV-QZ-Vvi">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="subTitleLabel" destination="MtV-QZ-Vvi" id="hcO-hq-d0v"/>
+                                        <outlet property="titleLabel" destination="Grc-tX-whP" id="dru-0Z-pw4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="2O8-FN-psq" id="26c-sD-FtB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="653" y="178"/>
+        </scene>
+    </scenes>
+</document>
